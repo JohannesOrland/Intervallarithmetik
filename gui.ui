@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Intervallarithmetik</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabs">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>460</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="rechnen">
+     <attribute name="title">
+      <string>Grundrechenarten</string>
+     </attribute>
+     <widget class="QPushButton" name="calcButton1">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelInput1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>62</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eingabe:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputIntervall">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>370</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="settingsRechnen">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>430</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearButton1">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>140</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <zorder>settingsRechnen</zorder>
+     <zorder>calcButton1</zorder>
+     <zorder>labelInput1</zorder>
+     <zorder>inputIntervall</zorder>
+     <zorder>clearButton1</zorder>
+    </widget>
+    <widget class="QWidget" name="nullstellen">
+     <attribute name="title">
+      <string>Nullstellen</string>
+     </attribute>
+     <widget class="QLineEdit" name="inputFunction">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>370</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelInput21">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>f(x)=</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calcButton2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearButton2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>140</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputDerivate">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>370</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelInput22">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>f'(x)=</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelInput23">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>90</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Startintervall:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputStart">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>90</y>
+        <width>120</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gleichungssystem">
+     <attribute name="title">
+      <string>Gleichungssystem</string>
+     </attribute>
+     <widget class="QLineEdit" name="inputA">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <stylestrategy>PreferDefault</stylestrategy>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>a</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputD">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>d</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputC">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>c</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputB">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>b</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputE">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>e</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputF">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>50</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>f</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label34">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>y  =</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label32">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>10</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>y  =</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label31">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x  +</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label33">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x  +</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calcButton3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="settingsGleichungssystem">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>430</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QCheckBox" name="checkBox31">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>220</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ausgabe des Gleichungssytems</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="clearButton3">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>140</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <zorder>settingsGleichungssystem</zorder>
+     <zorder>inputA</zorder>
+     <zorder>inputD</zorder>
+     <zorder>inputC</zorder>
+     <zorder>inputB</zorder>
+     <zorder>inputE</zorder>
+     <zorder>inputF</zorder>
+     <zorder>label34</zorder>
+     <zorder>label32</zorder>
+     <zorder>label31</zorder>
+     <zorder>label33</zorder>
+     <zorder>calcButton3</zorder>
+     <zorder>clearButton3</zorder>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="output">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>460</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>inputIntervall</tabstop>
+  <tabstop>calcButton1</tabstop>
+  <tabstop>output</tabstop>
+  <tabstop>inputFunction</tabstop>
+  <tabstop>calcButton2</tabstop>
+  <tabstop>inputA</tabstop>
+  <tabstop>inputB</tabstop>
+  <tabstop>inputC</tabstop>
+  <tabstop>inputD</tabstop>
+  <tabstop>inputE</tabstop>
+  <tabstop>inputF</tabstop>
+  <tabstop>calcButton3</tabstop>
+  <tabstop>tabs</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

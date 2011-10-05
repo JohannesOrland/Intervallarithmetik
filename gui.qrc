@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/ressources">
+        <file>Intervall.png</file>
+        <file>int.png</file>
+        <file>monaco.ttf</file>
+    </qresource>
+</RCC>
